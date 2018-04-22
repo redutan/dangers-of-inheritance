@@ -5,7 +5,7 @@ public class BadContentHolder extends AbstractPrefixContentHolder {
         super(content);
     }
 
-    // 재정의가 가능하며, 실제 사용하지 않음.
+    // 재정의가 가능하며(열린 상태이지만), 실제 사용하지 않음.
     @Override
     protected String getPrefix() {
         return "PREFIX";

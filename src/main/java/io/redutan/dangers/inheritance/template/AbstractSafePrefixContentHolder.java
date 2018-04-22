@@ -1,5 +1,7 @@
 package io.redutan.dangers.inheritance.template;
 
+import java.util.Objects;
+
 /**
  * 템플릿 패턴은 변하는 부분과 변하지 않는 부분의 관심사 분리가 중요하다.
  * 변하는 부분은 다형성으로 열어두고 변하지 않는 부분은 불변 템플릿(final)으로 만든다.
@@ -9,7 +11,7 @@ public abstract class AbstractSafePrefixContentHolder implements ContentHolder {
     private final String content;
 
     public AbstractSafePrefixContentHolder(String content) {
-        this.content = content;
+        this.content = Objects.requireNonNull(content); // 여기에서 제약조건을 추가할 수 있다.
     }
 
     // 템플릿 : 재정의 불가능하게 final
@@ -18,6 +20,6 @@ public abstract class AbstractSafePrefixContentHolder implements ContentHolder {
         return getPrefix() + content;
     }
 
-    // 다형석으로써 추상 메서드만 오픈시킨다.
+    // 다형성으로써 추상 메서드만 오픈시킨다.
     abstract protected String getPrefix();
 }

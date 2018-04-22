@@ -1,11 +1,10 @@
 package io.redutan.dangers.inheritance.open;
 
 public class FooFieldExtend extends FooField {
-    public FooFieldExtend(int num) {
-        super();
-        // public 이나 protected 나 열려 있다.
-        this.publicNum = num;
-        this.protectedNum = num;
+
+    public void setNum(int num) {
+        this.publicNum = num + 10;       // public field is evil!!
+        this.protectedNum = num + 20;    // protected field is evil too!!
 //        this.privateNum = num;    // Compile error
     }
 }

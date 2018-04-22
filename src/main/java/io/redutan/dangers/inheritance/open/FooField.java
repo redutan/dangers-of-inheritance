@@ -19,4 +19,10 @@ public class FooField {
     public int getPublicNum() {
         return publicNum;
     }
+
+    public void setNum(int num) {
+        this.publicNum = num;
+        this.protectedNum = num;
+        this.privateNum = num;
+    }
 }

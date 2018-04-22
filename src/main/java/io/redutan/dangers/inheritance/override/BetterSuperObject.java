@@ -7,6 +7,7 @@ public class BetterSuperObject {
     private final Long id;
     private final String title;
 
+    // public or protected ?
     public BetterSuperObject(Long id, String title) {
         if (id < 0L) {
             this.id = 0L;

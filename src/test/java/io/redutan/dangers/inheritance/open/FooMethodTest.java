@@ -1,8 +1,5 @@
-package io.redutan.dangers.inheritance.opentest;
+package io.redutan.dangers.inheritance.open;
 
-import io.redutan.dangers.inheritance.open.FooMethod;
-import io.redutan.dangers.inheritance.open.FooMethodWithLsp;
-import io.redutan.dangers.inheritance.open.FooMethodWithoutLsp;
 import org.junit.Test;
 
 import static org.hamcrest.Matchers.is;

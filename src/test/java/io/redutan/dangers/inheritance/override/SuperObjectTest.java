@@ -1,8 +1,5 @@
-package io.redutan.dangers.inheritance.overridetest;
+package io.redutan.dangers.inheritance.override;
 
-import io.redutan.dangers.inheritance.override.BadSuperObject;
-import io.redutan.dangers.inheritance.override.BetterSuperObject;
-import io.redutan.dangers.inheritance.override.GoodSuperObject;
 import org.junit.Test;
 
 import static org.hamcrest.Matchers.is;
